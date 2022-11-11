@@ -1,17 +1,13 @@
 import "../styles/Banner.css"
+import logo from "../assets/logo.png"
+
 
 function Banner() {
-    /*className='lmj-banner'*/
+    const title = 'La maison jungle';
     return (
-        <div style={
-            {
-                color:"black",
-                textAlign:"right",
-                padding:32/* "32px" */,
-                borderBottom:"solid 3px black"
-            }
-        }>
-            <h1>La maison jungle</h1>
+        <div className='lmj-banner'>
+            <img src={logo} alt="la maison jungle" className="lmg-logo"/>
+            <h1 className='lmj-title'>La maison jungle</h1>
         </div>
     );
 }
